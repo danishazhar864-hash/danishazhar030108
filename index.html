@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Diri - Danish Azhar</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Link ke CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🌌 Efek Bintang -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <!-- 🧭 Navigasi -->
+  <nav class="navbar">
+      <div class="logo">
+          <img src="denis.jpeg" alt="Logo Danish Azhar">
+          <h1>Danish Azhar</h1>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#home">Menu</a></li>
+          <li><a href="#about">Portofolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+
+  <!-- 🏠 HOME -->
+  <section id="home" class="section home">
+      <div class="container">
+          <div class="text">
+              <h2 class="welcome">Selamat Datang di Website Saya <span class="wave">👋</span></h2>
+              <p>Halo! Saya <strong>Danish Azhar</strong>, seorang pelajar berusia 17 tahun yang gemar bermain futsal.  
+              Di sini kamu bisa tahu lebih banyak tentang saya, pendidikan, dan hobi saya!</p>
+          </div>
+
+          <div class="nametag">
+              <img src="ukulele.jpeg" alt="Nametag Sekolah Danish Azhar" class="nametag-img">
+          </div>
+      </div>
+  </section>
+
+  <!-- 📖 ABOUT -->
+  <section id="about" class="section about">
+      <h2>📖 Tentang Saya</h2>
+      <div class="about-container">
+          <div class="profile">
+              <img src="denis1.jpeg" alt="Foto Profil Danish Azhar">
+          </div>
+          <div class="info">
+              <p><strong>Nama Lengkap:</strong> Danish Azhar</p>
+              <p><strong>Tanggal Lahir:</strong> 3 Januari 2008</p>
+              <p><strong>Alamat:</strong> Jalan Warakas 3 GG 15</p>
+              <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+              <p><strong>Hobi:</strong> Bermain Futsal</p>
+              <p><strong>Agama:</strong> Islam</p>
+              <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+          </div>
+      </div>
+
+      <div class="edu-exp">
+          <div class="education">
+              <h3>🎓 Riwayat Pendidikan</h3>
+              <ul>
+                  <li>SDN Warakas</li>
+                  <li>SMPN 65 Jakarta</li>
+                  <li>SMK Barunawati</li>
+              </ul>
+          </div>
+
+          <div class="experience">
+              <h3>💼 Pengalaman Kerja</h3>
+              <div class="pkl-row">
+                  <img src="pkl.jpg" alt="Foto PKL" class="pkl-img">
+                  <p>Saya pernah mengikuti <strong>Praktik Kerja Lapangan (PKL)</strong> di Sudinakertrans Jakarta dalam bidang energi.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- 📬 CONTACT -->
+  <section id="contact" class="section contact">
+      <h2>📬 Hubungi Saya</h2>
+      <div class="contact-container">
+          <div class="contact-info">
+              <div class="contact-row ngl-section">
+                  <img src="ngl.webp" alt="NGL Icon" class="contact-icon">
+                  <span>
+                    <strong>NGL:</strong> 
+                    <a href="https://ngl.link/denis68922" target="_blank" class="ngl-link">Klik Di Sini Untuk Kirim Pesan NGL</a>
+                  </span>
+              </div>
+
+              <div class="contact-row ngl-section">
+                  <img src="email.png" alt="Email Icon" class="contact-icon">
+                  <span>
+                    <strong>Email:</strong> 
+                    <a href="https:mailto:danishazhar864@gmail.com" target="_blank" class="ngl-link">danishazhar864@gmail.com</a>
+                  </span>
+              </div>
+              <div class="contact-row ngl-section">
+                  <img src="whatsapp.png" alt="whatsapp Icon" class="contact-icon">
+                  <span>
+                    <strong>WhatsApp:</strong> 
+                    <a href="https://wa.me/6281317824556" target="_blank" class="ngl-link">+62 813-1782-4556</a>
+                  </span>
+              </div>
+
+              <div class="contact-row ngl-section">
+                  <img src="instagram.png" alt="instagram Icon" class="contact-icon">
+                  <span>
+                    <strong>Instagram:</strong> 
+                    <a href="https://www.instagram.com/denis4n4kbaik/" target="_blank" class="ngl-link">denis4n4kbaik</a>
+                  </span>
+              </div>
+              
+          </div>
+
+          <form class="contact-form" action="mailto:danish.azhar@example.com" method="post" enctype="text/plain">
+              <input type="text" name="name" placeholder="Nama Anda" required>
+              <input type="email" name="email" placeholder="Email Anda" required>
+              <textarea name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+              <button type="submit">Kirim Pesan</button>
+          </form>
+      </div>
+  </section>
+
+  <!-- 🌙 FOOTER -->
+  <footer>
+      <p>TERIMA KASIH SUDAH BERKUNJUNG KE WEBSITE SAYA <span class="wave">👋</span></p>
+  </footer>
+
+ 
+
+<!-- Audio Selamat Datang -->
+<audio id="welcome-audio" src="audio.mp3"></audio>
+<script>
+  window.addEventListener('load', () => {
+    const audio = document.getElementById('welcome-audio');
+   
+    // Coba autoplay
+    audio.play().catch(() => {
+      // Jika diblokir browser, tunggu klik user
+      document.body.addEventListener('click', () => {
+        audio.play();
+      }, {once:true});
+    });
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
